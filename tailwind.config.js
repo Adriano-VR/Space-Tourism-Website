@@ -9,7 +9,11 @@ export default {
       backgroundColor:{
         headerColor: "rgba(255, 255, 255, 0.05)"
       }
-    },
+    },fontFamily:{
+      bellefair: "Bellefair",
+      Barlow:"barlow",
+      Barlow_Condensed:"Barlow Condensed",
+    }
   },
   plugins: [],
 }
