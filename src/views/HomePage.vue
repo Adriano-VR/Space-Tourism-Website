@@ -28,8 +28,8 @@ export default defineComponent({
           <h1 class="desktop-text-preset-1">SPACE</h1>
           <p class="desktop-text-preset-9">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
         </div>
-        <div>
-          <RouterLink to="/destination" class="size-64 bg-white rounded-full text-black" @click="handleExploreClick">
+        <div class="size-72 bg-white rounded-full flex items-center justify-center desktop-text-preset-4">
+          <RouterLink to="/destination" class=" text-black" @click="handleExploreClick">
             EXPLORE
           </RouterLink>
         </div>
@@ -41,31 +41,7 @@ export default defineComponent({
 
 
 <style scoped>
-.explore-button {
-  display: inline-block;
-  width: 136px;
-  height: 37px;
-  background-color: #FFFFFF;
-  color: #0B0D17;
-  font-family: 'Bellefair';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 37px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 37px;
-  border-radius: 50px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
-.explore-button:hover {
-  background-color: #F0F0F0;
-}
 .imagem{
 background-image: url("../assets/home/background-home-desktop.jpg");
 background-size: cover;
@@ -107,11 +83,9 @@ line-height: 180%;
 color: #D0D6F9;
 }
 
-.explore{
-  width: 136px;
-height: 37px;
 
-font-family: 'Bellefair';
+.desktop-text-preset-4 {
+  font-family: 'Bellefair';
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
@@ -120,7 +94,10 @@ line-height: 37px;
 text-transform: uppercase;
 
 color: #0B0D17;
+
 }
+
+
 
 
 
