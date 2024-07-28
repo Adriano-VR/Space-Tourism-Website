@@ -7,10 +7,7 @@ export default defineComponent({
   name: 'Destination',
   setup() {
     const objeto = ref<Isection | null>(null);
-<<<<<<< HEAD
       const selecionado = ref('moon');
-=======
->>>>>>> 163cacaeaad992275c765a5f7072d65b4eb0bbdd
 
     onMounted(async () => {
       try {
@@ -22,7 +19,7 @@ export default defineComponent({
     });
 
     const filteredDestinations = computed(() => {
-<<<<<<< HEAD
+
       return objeto.value?.destinations.filter(destination => destination.name.toLowerCase() === selecionado.value) || [];
     });
 
@@ -37,21 +34,11 @@ export default defineComponent({
       selecionado,
       getImageSrc
        };
-=======
-      return objeto.value?.destinations.filter(destination => destination.name.toLowerCase() === 'europa') || [];
-    });
-
-    return {
-      objeto,
-      filteredDestinations,
-    };
->>>>>>> 163cacaeaad992275c765a5f7072d65b4eb0bbdd
   },
 });
 </script>
 
 <template>
-<<<<<<< HEAD
   <section class="flex flex-col items-center justify-center text-white">
     <div class="flex gap-10 flex-col w-[1110px] h-[548px] ">
               <h1 class="desktop-text-preset-5">
@@ -103,26 +90,15 @@ export default defineComponent({
       
     </div>
   </section>
-=======
-    <section class="flex items-center justify-center">
-        <div class="text-white" v-for="item in filteredDestinations">
-        {{ item.name }}
-        </div>
-    </section>
- 
->>>>>>> 163cacaeaad992275c765a5f7072d65b4eb0bbdd
 </template>
 
 
 <style scoped>
-<<<<<<< HEAD
 
 .selecionado {
   border-bottom: 2px solid;
   padding-bottom: 0; 
 }
-=======
->>>>>>> 163cacaeaad992275c765a5f7072d65b4eb0bbdd
 section{
     background-image: url("../assets/destination/background-destination-desktop.jpg");
     height: 100vh;

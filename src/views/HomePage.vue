@@ -28,13 +28,8 @@ export default defineComponent({
           <h1 class="desktop-text-preset-1">SPACE</h1>
           <p class="desktop-text-preset-9">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
         </div>
-<<<<<<< HEAD
         <div class="custom-button size-72 bg-white rounded-full flex items-center justify-center desktop-text-preset-4 ">
           <RouterLink to="/destination" class="btn text-black" @click="handleExploreClick">
-=======
-        <div class="size-72 bg-white rounded-full flex items-center justify-center desktop-text-preset-4">
-          <RouterLink to="/destination" class=" text-black" @click="handleExploreClick">
->>>>>>> 163cacaeaad992275c765a5f7072d65b4eb0bbdd
             EXPLORE
           </RouterLink>
         </div>
@@ -47,7 +42,6 @@ export default defineComponent({
 
 <style scoped>
 
-<<<<<<< HEAD
 .custom-button {
         
             outline: none;
@@ -58,8 +52,6 @@ export default defineComponent({
         .custom-button:hover {
             outline: 80px solid rgba(255, 255, 255, 0.2);
         }
-=======
->>>>>>> 163cacaeaad992275c765a5f7072d65b4eb0bbdd
 .imagem{
 background-image: url("../assets/home/background-home-desktop.jpg");
 background-size: cover;
