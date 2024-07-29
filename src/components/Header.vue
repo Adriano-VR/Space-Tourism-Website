@@ -47,24 +47,13 @@ export default defineComponent({
       </RouterLink>
       <span class="w-[800px] h-px bg-white opacity-25 z-10"></span>
     </div>
-    <nav>
-      <ul class="flex gap-12 w-[976px] h-[96px] items-center px-16 justify-center bg-headerColor backdrop-blur-2xl">
-        <li :class="{ selecionado: selecionado === 'home' }" class="desktop-text-preset-8 flex gap-2 h-24 items-center box-border">
-          <span class="desktop-text-preset-8-bold">00</span>  
-          <RouterLink to="/" @click.native="setSelecionado('home')">HOME</RouterLink>
+    <nav class="flex gap-12 w-[976px] h-[96px] items-center px-16 justify-center bg-headerColor backdrop-blur-2xl">
+      <ul v-for="(li,index) in ['HOME','DESTINATION','CREW','TECHNOLOGY']" :key="index" >
+        <li :class="{ selecionado: selecionado === li.toLowerCase() }" class=" flex gap-2 h-24 items-center text-preset-8">
+          <span class="text-preset-8-bold">0{{index}}</span>  
+          <RouterLink :to="`/${li.toLowerCase()}`" @click.native="setSelecionado(li.toLowerCase())">{{li}}</RouterLink>
         </li>
-        <li :class="{ selecionado: selecionado === 'destination' }" class="desktop-text-preset-8 flex gap-2 h-24 items-center">
-          <span class="desktop-text-preset-8-bold">01</span> 
-          <RouterLink to="/destination" @click.native="setSelecionado('destination')">DESTINATION</RouterLink>
-        </li>
-        <li :class="{ selecionado: selecionado === 'crew' }" class="desktop-text-preset-8 flex gap-2 h-24 items-center">
-          <span class="desktop-text-preset-8-bold">02</span> 
-          <RouterLink to="/crew" @click.native="setSelecionado('crew')">CREW</RouterLink>
-        </li>
-        <li :class="{ selecionado: selecionado === 'technology' }" class="desktop-text-preset-8 flex gap-2 h-24 items-center">
-          <span class="desktop-text-preset-8-bold">03</span> 
-          <RouterLink to="/technology" @click.native="setSelecionado('technology')">TECHNOLOGY</RouterLink>
-        </li>
+
       </ul>
     </nav>
   </header>

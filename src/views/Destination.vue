@@ -12,7 +12,7 @@ export default defineComponent({
     onMounted(async () => {
       try {
         objeto.value = await obterDados();
-        console.log('Fetched data:', objeto.value);
+   
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -41,7 +41,7 @@ export default defineComponent({
 <template>
   <section class="flex flex-col items-center justify-center text-white">
     <div class="flex gap-10 flex-col w-[1110px] h-[548px] ">
-              <h1 class="desktop-text-preset-5">
+              <h1 class="text-preset-5">
                 <span class="span">01</span> PICK YOUR DESTINATION
               </h1>
      
@@ -50,7 +50,7 @@ export default defineComponent({
                 <img :src="getImageSrc(selecionado)" :key="selecionado" alt="" class="size-96">
               </transition>
               <div>
-                <nav class="flex gap-8 box-border font-bellefair cursor-pointer pb-10">
+                <nav class="text-preset-8 flex gap-8 box-border cursor-pointer pb-10">
                 <span
                   v-for="planet in ['moon', 'mars', 'europa', 'titan']"
                   :key="planet"
@@ -64,17 +64,17 @@ export default defineComponent({
               <transition name="fade" mode="out-in">
                 <div v-if="filteredDestinations.length " :key="selecionado" >
                   <div v-for="dados in filteredDestinations" :key="dados.name" class="flex flex-col gap-10 w-[445px]">
-                <h1 class="font-bellefair text-8xl font-normal uppercase">{{ dados.name }}</h1>
-                <p class="text-[#D0D6F9] text-[18px] leading-8 font-normal font-Barlow">{{ dados.description }}</p>
+                <h1 class="text-preset-2 uppercase">{{ dados.name }}</h1>
+                <p class="text-preset-9">{{ dados.description }}</p>
                 <span class="border opacity-25 h-px"></span>
                       <div class="grid grid-cols-2 gap-6 w-full">
                         <div class="flex flex-col items-start gap-3">
-                          <span class="font-Barlow_Condensed font-medium text-[14px] leading-4 tracking-[2px] text-[#D0D6F9]">AVG. DISTANCE</span>
-                          <span class="font-bellefair font-normal text-[28px] leading-8 text-white uppercase">{{ dados.distance }}</span>
+                          <span class="text-preset-7">AVG. DISTANCE</span>
+                          <span class="text-preset-6">{{ dados.distance }}</span>
                         </div>
                         <div class="flex flex-col items-start gap-3">
-                          <span class="font-Barlow_Condensed font-medium text-[14px] leading-4 tracking-[2px] text-[#D0D6F9]">EST. TRAVEL TIME</span>
-                          <span class="font-bellefair font-normal text-[28px] leading-8 text-white uppercase">{{ dados.travel }}</span>
+                          <span class="text-preset-7">EST. TRAVEL TIME</span>
+                          <span class="text-preset-6">{{ dados.travel }}</span>
                         </div>
                       </div>
                   </div>
@@ -99,34 +99,23 @@ export default defineComponent({
   border-bottom: 2px solid;
   padding-bottom: 0; 
 }
+
 section{
     background-image: url("../assets/destination/background-destination-desktop.jpg");
     height: 100vh;
     background-size: cover;
 }
 
- .desktop-text-preset-5 {
-  font-family: 'Barlow Condensed';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 34px;
-/* identical to box height */
-letter-spacing: 4px;
-color: #FFFFFF;
- }
 
- .span{
-  font-family: 'Barlow Condensed';
+
+.span{
+    font-family: 'Barlow Condensed';
 font-style: normal;
 font-weight: 700;
 font-size: 28px;
 line-height: 34px;
-/* identical to box height */
 letter-spacing: 4.725px;
-
 color: #FFFFFF;
-
 mix-blend-mode: normal;
 opacity: 0.25;
  }

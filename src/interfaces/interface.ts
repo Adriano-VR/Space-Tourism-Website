@@ -10,7 +10,16 @@ export interface Isection {
       distance: string;
       travel: string;
     }>;
-    crew: Array<any>; // Defina corretamente de acordo com os dados reais
+    crew: Array<{
+      name:string;
+      images: {
+        png:string;
+        webp:string;
+      }
+      role:string;
+      bio:string
+
+    }>; 
     technology: Array<any>; // Defina corretamente de acordo com os dados reais
   }
   
