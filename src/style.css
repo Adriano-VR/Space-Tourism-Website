@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s;
+  }
+  
+  .fade-enter, .fade-leave-to /* .fade-leave-active no final do Vue 2 */ {
+    opacity: 0;
+  }
+
+  .span {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }

@@ -36,11 +36,11 @@ export default defineComponent({
           </p>
         </div>
         <div
-          class="text-preset-4 custom-button size-72 bg-white rounded-full flex items-center justify-center "
+          class=" custom-button size-72  rounded-full flex items-center justify-center "
         >
           <RouterLink
             to="/destination"
-            class="btn text-black"
+            class="btn text-black text-preset-4"
             @click="handleExploreClick"
           >
             EXPLORE
@@ -53,6 +53,7 @@ export default defineComponent({
 
 <style scoped>
 .custom-button {
+  background-color: white;
   outline: none;
   outline: white;
   transition: outline 0.4s;

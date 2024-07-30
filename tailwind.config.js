@@ -51,9 +51,9 @@ export default {
           'font-size':'32px',
           'line-height': '37px',
           'text-transform': 'uppercase',
-           color: ' #FFFFFF',
-          ' mix-blend-mode': 'normal',
-           'opacity': 0.5
+           color: ' #0B0D17',
+          ' text-shadow':' 0px 4px 4px rgba(0, 0, 0, 0.25)'
+
          },
          '.text-preset-8': {
           'font-family': 'Barlow Condensed',
@@ -111,6 +111,19 @@ export default {
           'text-transform': 'uppercase',
            color: ' #FFFFFF',
          },
+         '.text-preset-4-4': {
+          'font-family': 'Bellefair',
+          'font-style': 'normal',
+          'font-weight':'400',
+          'font-size':'32px',
+          'line-height': '37px',
+          'text-transform': 'uppercase',
+           color: ' #FFFFFF',
+          ' mix-blend-mode': 'normal',
+           'opacity':' 0.5'
+           
+
+         }
 
 
 

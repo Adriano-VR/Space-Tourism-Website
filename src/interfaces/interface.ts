@@ -20,7 +20,14 @@ export interface Isection {
       bio:string
 
     }>; 
-    technology: Array<any>; // Defina corretamente de acordo com os dados reais
+    technology: Array<{
+      name:string;
+      images:{
+        portrait:string;
+        landscape:string;
+      }
+      description:string;
+    }>; 
   }
   
 

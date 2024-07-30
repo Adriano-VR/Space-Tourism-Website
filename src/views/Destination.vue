@@ -40,7 +40,7 @@ export default defineComponent({
 
 <template>
   <section class="flex flex-col items-center justify-center text-white">
-    <div class="flex gap-10 flex-col w-[1110px] h-[548px] ">
+    <div class="flex gap-10 flex-col w-[1275px] h-[600px] ">
               <h1 class="text-preset-5">
                 <span class="span">01</span> PICK YOUR DESTINATION
               </h1>
@@ -108,25 +108,8 @@ section{
 
 
 
-.span{
-    font-family: 'Barlow Condensed';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 34px;
-letter-spacing: 4.725px;
-color: #FFFFFF;
-mix-blend-mode: normal;
-opacity: 0.25;
- }
 
- .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s;
-}
 
-.fade-enter, .fade-leave-to /* .fade-leave-active no final do Vue 2 */ {
-  opacity: 0;
-}
 
 </style>
 
